@@ -1,0 +1,452 @@
+/* TABLE OF CONTENTS */
+/* ----------------------------
+1. General
+2. Navbar
+3. Banner
+4. JoinUS
+5. Experience the benefits
+6. Schedule a call 
+7. Footer
+---------------------------- */
+
+/* 1. General */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Manrope', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Colors */
+    --chili-red: #FF5721;
+    --chili-red-light: #FAC9BA;
+    --chili-black: #242348;
+    --chili-dark: #363866;
+    --chili-text: #696A85;
+    --chili-grey: #9C9DB4;
+    --chili-grey-light: #F5F7FA;
+    --chili-middle-grey :#DFDFE7;
+    --chili-white: #ffffff;
+    /* Background-Color */
+    --gentle-red-gradient: linear-gradient(180deg, #FF6421 6.25%, #FF5721 95.54%);
+    /* Text Color */
+
+    /* Fonts */
+    --primary-font: 'Manrope', sans-serif;
+    --secondary-font: 'Bebas Neue', cursive;
+    --normal-font-weight:400;
+    --bold-font-weight:700;
+    --extra-bold-font-weight: 800;
+}
+.action_btn{
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding: 1.188rem 1.5rem;
+    border-radius: 1.25rem;
+    background: var(--gentle-red-gradient);
+    color: var(--chili-white);
+}
+body{
+    font-family: var(--primary-font);
+    font-weight: var(--normal-font-weight);
+    background-color: var(--chili-white);
+}
+
+/* 2. Navbar */
+.header_wrapper .nav-item{
+    margin: 0 10px;
+}
+.header_wrapper .nav-item .nav-link{
+    font-weight: 700;
+    color: var(--chili-white);
+}
+.header_wrapper .login-btn{
+    border: 1px solid var(--chili-middle-grey);
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem 1rem !important;
+}
+.header_wrapper .demo-btn{
+    border: 1px solid var(--chili-red);
+    border-radius: 0.5rem;
+    color: var(--chili-red) !important;
+    padding: 0.5rem 1rem !important;
+}
+
+/* 3. Banner */
+.banner_wrapper{
+    height: 100vh;
+    background: url('../images/Gradient-Background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 6rem 0 4rem 0; */
+    
+    /* margin-bottom: -2rem; */
+}
+.banner_wrapper h4{
+    color: var(--chili-red);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1.482rem;
+    line-height: 1.188rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+.banner_wrapper .banner_title{
+    font-size: 3.375rem;
+    font-weight: var(--extra-bold-font-weight);
+    color: var(--chili-white);
+    line-height: 4.063rem;
+    letter-spacing: -0.01em;
+}
+.banner_wrapper .banner_title span{
+    color: var(--chili-red);
+}
+.banner_wrapper .banner_text{
+    font-size: 1.375rem;
+    color: var(--chili-white);
+    line-height: 2.063rem;
+}
+
+/* 4. JoinUs */
+.joinus_wrapper{
+    padding: 4rem 0;
+}
+.joinus_wrapper h4{
+    color: var(--chili-red);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1.482rem;
+    line-height: 1.188rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+.joinus_wrapper .joinus_title{
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    font-weight: var(--extra-bold-font-weight);
+    color: var(--chili-dark);
+    letter-spacing: -0.01em;
+}
+.joinus_wrapper .joinus_text{
+    font-size: 1.313rem;
+    line-height: 2rem;
+    color: var(--chili-text);
+}
+
+/* 5. Experience the benefits */
+.experience_wrapper{
+    padding-bottom: 4rem;
+}
+/* only card bg grey */
+.bg-grey{
+    background: var(--chili-grey-light);
+}
+/* ----------------- */
+.experience_wrapper .experience_title{
+    color: var(--chili-dark);
+    font-size: 2.125rem;
+    line-height: 3.75rem;
+    letter-spacing: -0.01em;
+    font-weight: var(--extra-bold-font-weight);
+}
+.experience_wrapper .experience_card{
+    /* border: 1px solid #242348; */
+    padding: 2.7rem 1.8rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 50px 90px -40px rgba(50, 51, 80, 0.2);
+    margin-bottom: 1rem;
+}
+.experience_wrapper .experience_card .experience_card_title{
+    font-size: 1.25rem;
+    font-weight: var(--bold-font-weight);
+    line-height: 1.75rem;
+    color: var(--chili-black);
+}
+.experience_wrapper .experience_card .experience_card_text{
+    font-size: 1.063rem;
+    line-height: 1.625rem;
+    color: var(--chili-text);
+}
+/* 6. Schedule a call  */
+.request_wrapper{
+    padding: 4rem 0;
+    background: url('../images/request-bg.svg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: right bottom;
+}
+.request_wrapper .request_form{
+    padding: 1rem;
+    border-radius: 1.875rem;
+    background: var(--chili-white);
+    box-shadow: 0px 50px 90px -40px rgba(50, 51, 80, 0.2);
+}
+.request_wrapper .request_title{
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -0.03em;
+    font-weight: var(--extra-bold-font-weight);
+    color: var(--chili-dark);
+}
+.request_wrapper .request_title span{
+    color: var(--chili-red);
+}
+.request_wrapper .request_text{
+    color: var(--chili-dark);
+    line-height: 2rem;
+}
+.request_wrapper .request_text span{
+    font-size: 1.313rem;
+    font-weight: 500;
+}
+.request_wrapper .input_field{
+    font-size: 1.063rem;
+    color: var(--chili-text);
+    line-height: 1.625rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 1.25rem;
+    background: var(--chili-grey-light);
+}
+.request_wrapper .input_field::placeholder{
+    font-size: 1.063rem;
+    color: var(--chili-text);
+    line-height: 1.625rem;
+}
+/* drop down */
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #008192;
+    /* padding: 4px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+/* drop-down */
+
+.select-box {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.select-box__current {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  /* border: 1px solid var(--chili-red); */
+  background: var(--chili-grey-light);
+  border-radius: 1.25rem;
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select-box__current:focus + .select-box__list {
+  opacity: 1;
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+.select-box__current:focus + .select-box__list .select-box__option {
+  cursor: pointer;
+}
+.select-box__current:focus .select-box__icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+.select-box__icon {
+  /* transform: translateY(-50%); */
+  transition: 0.2s ease;
+  height: 100%;
+}
+.select-box__value {
+  display: flex;
+}
+.select-box__input {
+  display: none;
+}
+.select-box__input:checked + .select-box__input-text {
+  display: flex;
+  align-items: center;
+}
+.select-box__input-text {
+  display: none;
+  width: 100%;
+  font-size: 1.063rem;
+  color: var(--chili-text);
+  line-height: 1.625rem;
+}
+.select-box__list {
+  position: absolute;
+  top: 3.5rem;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  background-color: var(--chili-white);
+  /* border: 1px solid red; */
+  /* border-radius: 1.25rem; */
+
+  
+  
+  -webkit-animation-name: HideList;
+          animation-name: HideList;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-start;
+          animation-timing-function: step-start;
+  /* box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); */
+}
+.select-box__option {
+    /* display: inline; */
+  background-color: var(--chili-white);
+  display: block;
+  /* border-radius: 1.25rem; */
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.2rem;
+}
+.select-box__option:hover, .select-box__option:focus {
+  color: #546c84;
+  background-color: #dbdbdb;
+}
+
+@-webkit-keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+.request_wrapper .privacy{
+    font-size: 0.788rem;
+    line-height: 2rem;
+    color: var(--chili-grey);
+}
+.request_wrapper .privacy a{
+    text-decoration: none;
+    color: var(--chili-red);
+}
+
+/* 7. Footer */
+.footer_wrapper{
+    /* padding-top: 4rem; */
+    padding-top: 4rem;
+    background: var(--chili-black);
+    color: var(--chili-white);
+}
+.footer_wrapper .footer_title h4{
+    color: var(--chili-text);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer_wrapper .footer_list ul li{
+    list-style: none;
+    margin-bottom: 0.4rem;
+}
+.footer_wrapper .footer_list ul li a{
+    text-decoration: none;
+    color: var(--chili-grey);
+    font-weight: 500;
+}
+.footer_wrapper .media_box{
+    background: #3638668a;
+    padding: 0.9rem 0.5rem;
+    border-radius: 0.6rem;
+    height: 10rem;
+    max-width: 10rem;
+}
+.footer_wrapper .media_box .social_box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer_wrapper .media_box .social_box img{
+    min-height: 2rem;
+    min-width: 2rem;
+}
+.footer_wrapper .footer_copyright{
+    font-size: 1rem;
+    color: var(--chili-text);
+    font-weight: 500;
+}
+.footer_wrapper .arrow_icon_wrapper{
+    padding: 0.7rem 2.5rem;
+    background-color: var(--chili-red);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem
+}
+.footer_wrapper .arrow_icon{
+    height: 1.2rem;
+    width: 1.2rem;
+    color: var(--chili-white);
+}
+/* Media Query */
+@media (max-width: 767px){
+    /* 2. Navbar */
+
+
+    /* 3. Banner */
+    .banner_wrapper .banner_title{
+        font-size: 2.125rem;
+        font-weight: var(--extra-bold-font-weight);
+        color: var(--chili-white);
+        line-height: 3.063rem;
+        letter-spacing: -0.01em;
+    }
+    .banner_wrapper img{
+        width: 80%;
+    }
+
+    /* 4. JoinUS */
+    .joinus_wrapper .joinus_title{
+        font-size: 2.125rem;
+        line-height: 2.7rem;
+    }
+
+    /* 5. Experience the benefits */
+    .experience_wrapper .experience_title{
+        font-size: 2.125rem;
+        line-height: 2.7rem;
+    }
+    /* 6. Schedule a call  */
+    .request_wrapper .request_title{
+        font-size: 2.125rem;
+        line-height: 2.7rem;
+    }
+    /* 7. Footer */
+    /* .footer_wrapper .media_box{
+        padding: 0.9rem 1rem;
+    } */
+    .footer_wrapper .arrow_icon_wrapper{
+        padding: 0.5rem 1.5rem;
+    }
+    .footer_wrapper .footer_copyright{
+        font-size: 0.8rem;
+    }
+}
